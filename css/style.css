@@ -251,7 +251,7 @@ textarea {
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem; }
+    grid-gap: 30rem; }
     @media only screen and (max-width: 56.25em) {
       .about__content {
         grid-template-columns: 1fr;
@@ -702,3 +702,47 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+/* จัดกลุ่ม Projects ทั้งหมดให้อยู่ตรงกลางหน้าจอ */
+#projects .projects__row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* จัดปุ่มและเนื้อหาให้อยู่กลาง */
+    justify-content: center !important;
+    text-align: center !important; /* จัดตัวหนังสือให้อยู่กลาง */
+    margin-bottom: 8rem !important; /* เพิ่มระยะห่างระหว่างแต่ละโปรเจกต์ */
+}
+
+/* ปรับความกว้างของเนื้อหาให้อ่านง่ายขึ้น */
+#projects .projects__row-content {
+    width: 100% !important;
+    max-width: 90rem !important; /* ขยายความกว้างของตัวหนังสือให้กว้างขึ้นอีกนิด */
+    padding-left: 0 !important; /* ลบระยะห่างที่เคยเว้นไว้ให้รูป */
+}
+
+/* จัดระยะห่างของคำอธิบายกับปุ่ม */
+#projects .projects__row-content-desc {
+    margin: 0 auto 4rem auto !important; /* จัดกึ่งกลางคำอธิบายและเว้นระยะก่อนถึงปุ่ม */
+    max-width: 70rem !important; /* บีบเฉพาะตัวหนังสือให้อ่านง่าย */
+}
+
+/* ปรับสไตล์ปุ่มให้ดูโดดเด่น */
+#projects .btn {
+    width: fit-content !important; /* ให้ปุ่มกว้างพอดีกับตัวหนังสือ */
+    margin: 0 auto !important; /* บังคับให้ปุ่มอยู่ตรงกลาง */
+}
+/* จัดหัวข้อโปรเจกต์ให้อยู่ตรงกลาง */
+#projects .projects__row-content-title {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    margin-bottom: 2rem !important; /* เว้นระยะห่างจากคำอธิบาย */
+}
+
+/* บังคับให้ปุ่มและเนื้อหาทั้งหมดในแถวอยู่ตรงกลาง */
+#projects .projects__row-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* จัดปุ่มให้อยู่กึ่งกลาง */
+    justify-content: center !important;
+    text-align: center !important; /* จัดตัวหนังสือให้อยู่กึ่งกลาง */
+}

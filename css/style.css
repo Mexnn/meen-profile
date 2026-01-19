@@ -746,3 +746,97 @@ textarea {
     justify-content: center !important;
     text-align: center !important; /* จัดตัวหนังสือให้อยู่กึ่งกลาง */
 }
+
+/* --- CSS Social 3D Stack (ฉบับปรับปรุง: ตัวใหญ่ ชัด) --- */
+
+/* ล้างค่าเดิมของ Template */
+.home-hero__socials {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    overflow: visible !important;
+}
+
+/* กล่องเมนู */
+.social-stack ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    perspective: 1000px;
+    width: 16rem; /* ขยายความกว้างกล่องให้ใส่ตัวหนังสือใหญ่ได้ */
+}
+
+/* ดีไซน์ปุ่มแต่ละชั้น */
+.social-stack li {
+    height: 4rem; /* เพิ่มความสูงปุ่ม */
+    display: flex;
+    background: #fff;
+    box-shadow: inset 0 0 1rem -0.5rem #0002;
+    transition: all 0.3s;
+    transform: translate3d(0, 0, 0);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+/* มุมโค้งมน */
+.social-stack li:first-child { border-radius: 1rem 1rem 0 0; }
+.social-stack li:last-child { border-radius: 0 0 1rem 1rem; border-bottom: none; }
+
+/* --- ส่วนจัดการตัวหนังสือและไอคอน (แก้ตรงนี้) --- */
+.social-stack a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    padding-left: 2rem;  /* ขยับข้อความออกจากขอบซ้าย */
+    text-decoration: none;
+    
+    /* ปรับตัวหนังสือให้ใหญ่และเข้ม */
+    color: #000 !important;      /* สีดำสนิท */
+    font-size: 1.4rem !important; /* ขนาดตัวหนังสือ (ปรับเลขนี้ถ้าอยากได้ใหญ่กว่านี้) */
+    font-weight: 700 !important;  /* ความหนาตัวหนังสือ (700=ตัวหนา) */
+    font-family: sans-serif;
+}
+
+/* ปรับขนาดไอคอนโลโก้ */
+.social-stack i {
+    margin-right: 1.5rem; /* ระยะห่างระหว่างโลโก้กับตัวหนังสือ */
+    width: 2rem;
+    text-align: center;
+    font-size: 1.6rem !important; /* ขนาดโลโก้ */
+    color: #333;
+}
+
+/* --- Effect ตอนเอาเมาส์ชี้ --- */
+.social-stack li:hover {
+    transform: translate3d(0, 0, 2rem);
+    background: #fff;
+    z-index: 100;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
+/* เปลี่ยนสีไอคอนตามแบรนด์เมื่อเอาเมาส์ชี้ (ลูกเล่นเสริม) */
+.social-stack li:hover .fa-facebook-f { color: #1877F2; }
+.social-stack li:hover .fa-github { color: #333; }
+.social-stack li:hover .fa-instagram { color: #E4405F; }
+
+/* ปรับแต่งไอคอนใน Footer ให้เป็นสีขาวและขนาดพอดี */
+.main-footer__icon {
+    font-size: 3rem; /* ขนาดไอคอน (ปรับเลขนี้ถ้าอยากได้เล็ก/ใหญ่) */
+    color: #fff;     /* สีไอคอน (สีขาว) */
+    margin-right: 2rem; /* ระยะห่างระหว่างไอคอน */
+    width: auto !important; /* ล้างค่าความกว้างเดิมของรูปภาพ */
+    transition: color 0.3s;
+}
+
+/* ลบระยะห่างขวาของตัวสุดท้าย (Instagram) */
+.main-footer__icon--mr-none {
+    margin-right: 0;
+}
+
+/* เพิ่มลูกเล่นตอนชี้เมาส์ (เปลี่ยนเป็นสีฟ้า/เทา ตามธีม) */
+.main-footer__icon:hover {
+    color: #2b7bc6; /* เปลี่ยนสีตอนชี้ (เลือกสีที่ชอบได้เลย) */
+}

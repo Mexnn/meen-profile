@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header class="header">
@@ -97,36 +98,32 @@
         </div>
       </div>
       <div class="home-hero__socials">
-        <div class="home-hero__social">
-          <a href="https://www.facebook.com/profile.php?id=61580646897416" class="home-hero__social-icon-link">
-            <img
-              src="./assets/jpeg/FFF.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="https://github.com/Mexnn" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/github-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a
-            href="https://www.instagram.com/slithnunt/"
-            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
-          >
-            <img
-              src="./assets/png/insta-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
+  <div class="home-hero__socials">
+    <nav class="social-stack">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61580646897416" target="_blank">
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://github.com/Mexnn" target="_blank">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/slithnunt/" target="_blank">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
       </div>
       <div class="home-hero__mouse-scroll-cont">
         <div class="mouse"></div>
@@ -168,8 +165,7 @@
               <div class="skills__skill">CSS</div>
               <div class="skills__skill">JavaScript</div>
               <div class="skills__skill">excel</div>
-              <div class="skills__skill">CanVa</div>
-              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">canva</div>
               <div class="skills__skill">Word</div>
               <div class="skills__skill">Python</div>
               <div class="skills__skill">Sql</div>
@@ -260,7 +256,7 @@
   <div class="projects__row-content" style="width: 100%; text-align: center; margin: 0 auto;">
     <h3 class="projects__row-content-title">โปรแกรมจัดไฟล์ในเครื่อง</h3>
     <p class="projects__row-content-desc" style="margin: 0 auto 3rem auto;">
-      โปรแกรมจัดการและจัดระเบียบไฟล์อัจฉริยะที่ผมพัฒนาขึ้นด้วยภาษา Python ทั้งหมด โดยออกแบบมาเพื่อช่วยแก้ปัญหาไฟล์กระจัดกระจายในเครื่องคอมพิวเตอร์
+      โปรแกรมจัดการและจัดระเบียบไฟล์ที่ผมพัฒนาขึ้นด้วยภาษา Python ทั้งหมด โดยออกแบบมาเพื่อช่วยแก้ปัญหาไฟล์กระจัดกระจายในเครื่องคอมพิวเตอร์
        โปรแกรมนี้มาพร้อมกับหน้าจอใช้งาน (UI) ที่ทันสมัยและเข้าใจง่าย 
       สามารถแยกประเภทไฟล์ลงโฟลเดอร์ต่างๆ ได้อัตโนมัติ ช่วยลดเวลาในการจัดระเบียบข้อมูลได้อย่างมีประสิทธิภาพครับ
     </p>
@@ -327,28 +323,18 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=61580646897416">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/jpeg/FFF.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/Mexnn">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/slithnunt/">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
-            </div>
+    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=61580646897416">
+        <i class="fa-brands fa-facebook main-footer__icon"></i>
+    </a>
+
+    <a target="_blank" rel="noreferrer" href="https://github.com/Mexnn">
+        <i class="fa-brands fa-github main-footer__icon"></i>
+    </a>
+
+    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/slithnunt/">
+        <i class="fa-brands fa-instagram main-footer__icon main-footer__icon--mr-none"></i>
+    </a>
+</div>
           </div>
           <div class="main-footer__row main-footer__row-2">
             <h4 class="heading heading-sm text-lt">Slithnunt Siriyong</h4>
